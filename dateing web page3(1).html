@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>dateing page</title>
-    <style>
-        @keyframes mymove {
-            from {background-color: red;}
-            to {background-color: blue;}
-        }
-    </style>
+
 
 </head>
 
+<fieldset style="border:10px:yellow:margin-bottom:10px:width 720px"</fieldset>
+<style>
+
+
+    #myProgress {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        background-color: #f6f6f6;
+    }
+
+    #myBar {
+        position: absolute;
+        width: 1%;
+        height: 100%;
+        background-color: #4CAF50;
+    }
+</style>
 
 
 
-<fieldset style="border:10px solid"</fieldset>
+<fieldset style="background: lightyellow"
+
+    <fieldset style="border:10px solid"</fieldset>
 
 
 
 <h3>Please Enter Your Details For Our Dating Website!</h3>
-<audio controls>
-    <source src="file:///home/george17/Downloads/What%20is%20Love%20-%20Haddaway%20-%20What%20is%20Love%20-%20Haddaway%20%20.mp3
-
-"type="audio/mpeg">
 
 
 
-    </audio>
+
+
+
 <fieldset>
     <legend>Your Face</legend>
     <!--<label> <strong> Your Image:</strong></label>-->
@@ -37,11 +51,11 @@
     <!--<input id="Image Preview" required/><div></div>-->
     <img src="file:///home/george17/Downloads/8TzKkoaoc.png
 " height="90" width="150"/>
-</fieldset>
+</>
 <!--    <fieldset style="background: #feff00">
 <fieldset style="border:10px solid"-->
 
-
+</fieldset>
 <fieldset>
 
 <legend>Your General Details</legend>
@@ -69,16 +83,15 @@
 -->
 
 
-    <label> <strong>JOHN CENA</strong></label>
-<input id="jc.jpg" type="radio"/>
-    <br>
+
+
 <div></div>
 
 
 
 </table>
 <label for="Age:"><strong>Age:</strong></label>
-        <input id="age:"/>
+        <input type="number" id="age:"/>
 
 
 <br>
@@ -149,11 +162,6 @@
         <label><strong>In App Chat</strong></label>
     <br>
 
-    <audio controls>
-        <source src="file:///home/george17/Downloads/HIS%20NAME%20IS%20JOHN%20CENA%20THEME%20SONG%20(128%20%20kbps).mp3
-
-
-"type="audio/mpeg">
 
 </fieldset>
 
@@ -161,12 +169,62 @@
     <div></div>
 
 
+    <div id="myProgress">
+        <div id="myBar">
+        <div id="label">10%</div></div>
+    </div>
+
+<style>
+    #myProgress {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        background-color: #f6f6f6;
+    }
+
+    #myBar {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        background-color: #e220d4;
+    }
+
+    #label {
+        text-align: center;
+        line-height: 30px;
+        color: #000000;
+    }
+</style>
+<body>
 
 
 
-<input type="submit"/>
+
+
+<br>
+
+<button type="submit" onclick="move()">submit</button>
+</botton>
+<script>
+    function move() {
+        var elem = document.getElementById("myBar");
+        var width = 10;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                document.getElementById("label").innerHTML = width * 1  + '%';
+            }
+        }
+    }
+</script>
 
 
 
+
+</fieldset>
 </body>
 </html>
